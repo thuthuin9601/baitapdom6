@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="banggia" id="gia">
+        <option value="oi">Ổi</option>
+        <option value="duahau">Dưa hấu</option>
+        <option value="tao">Táo</option>
+        <option value="xoai">Xoài</option>
+        <option value="cam">Cam</option>
+        <option value="chomchom">Chôm chôm</option>
+        <option value="mangcut">Măng cụt</option>
+    </select>
+    <button onclick="result()">Hiển thị giá</button>
+    <h3>Kết quả là:</h3>
+    <div id="ketqua"></div>
+</body>
+</html>
+<script>
+    function result(){
+        let price=document.getElementById('gia').value;
+    switch (price){
+    case 'oi':{
+        document.getElementById('ketqua').innerHTML=('20000 VNĐ/kg');
+        break;
+    }
+    case 'duahau':{
+        document.getElementById('ketqua').innerHTML=('20000 VNĐ/kg');
+        break;
+    }
+    case 'tao':{
+        document.getElementById('ketqua').innerHTML=('30000 VNĐ/kg');
+        break;
+    }
+    case 'xoai':{
+        document.getElementById('ketqua').innerHTML=('30000 VNĐ/kg');
+        break;
+    }
+    case 'cam':{
+        document.getElementById('ketqua').innerHTML=('40000 VNĐ/kg');
+        break;
+    }
+    case 'chomchom':{
+        document.getElementById('ketqua').innerHTML=('40000 VNĐ/kg');
+        break;
+    }
+    case 'mangcut':{
+        document.getElementById('ketqua').innerHTML=('50000 VNĐ/kg');
+        break;
+    }
+    }  
+    }
+</script>
